@@ -1,0 +1,143 @@
+$main-color: #3498db;
+$main-color-dark: #2980b9;
+$sec-color: #7451f8;
+
+
+.new {
+  width: 100%;
+  display: flex;
+
+  .newContainer {
+    flex: 6;
+
+    .top,
+    .bottom {
+      -webkit-box-shadow: 2px 4px 10px 1px rgba(0, 0, 0, 0.47);
+      box-shadow: 2px 4px 10px 1px rgba(201, 201, 201, 0.47);
+      padding: 10px;
+      margin: 20px;
+
+      h1 {
+        color: lightgray;
+        font-size: 20px;
+      }
+
+      .infoSide {
+        text-align: center;
+        width: 40%;
+        margin: 0 auto;
+
+        h2 {
+          color: $main-color;
+        }
+
+        .image {
+          padding: 10px;
+
+          img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            object-fit: cover;
+          }
+
+          label {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            justify-content: center;
+            cursor: pointer;
+            width: 100px;
+            margin: 0 auto;
+
+            .icon {
+              cursor: pointer;
+              color: $main-color;
+            }
+          }
+
+        }
+
+        .infoInput {
+          padding: 10px;
+          border-bottom: 1px dashed lightgray;
+
+          .infoType {
+            display: inline-block;
+            width: 40%;
+            padding: 10px;
+
+            input {
+              padding: 5px;
+              border: none;
+              border-bottom: 1px solid gray;
+              width: 100%;
+
+              &:focus {
+                outline: none;
+                box-shadow: 0px 0px 12px 0.8px #3474dbb2;
+              }
+            }
+          }
+        }
+      }
+
+      .calcSide {
+        text-align: center;
+        width: 40%;
+        margin: 0 auto;
+
+        h2 {
+          color: $main-color;
+        }
+
+        .gender {
+          text-align: center;
+          font-size: 20px;
+
+          :nth-child(3) {
+            margin-right: 50px;
+          }
+
+          input {
+            margin-right: 5px;
+          }
+        }
+
+        .calcInput {
+          padding: 10px;
+
+          .calcType {
+            display: inline-block;
+            width: 40%;
+            padding: 10px;
+
+            input {
+              padding: 5px;
+              border: none;
+              border-bottom: 1px solid gray;
+              width: 100%;
+
+              &:focus {
+                outline: none;
+                box-shadow: 0px 0px 12px 0.8px #3474dbb2;
+              }
+            }
+          }
+        }
+
+        button {
+          width: 150px;
+          padding: 10px;
+          border: none;
+          background-color: $main-color;
+          color: white;
+          font-weight: bold;
+          cursor: pointer;
+          margin-top: 10px;
+          font-size: 16px;
+        }
+      }
+    }
+  }
+}

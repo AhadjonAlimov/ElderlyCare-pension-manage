@@ -1,0 +1,193 @@
+.cover-login {
+    background-image: url("../../assets/login-bg.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+}
+
+.size-login {
+    max-width: 500px;
+    margin: 0 auto;
+    background: #fff;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+
+}
+
+.base-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    .header {
+        font-family: "Open Sans", sans-serif;
+        margin: 10px;
+        color: #3498db;
+    }
+
+    .content {
+        display: flex;
+        flex-direction: column;
+
+        .image {
+            width: 15em;
+            margin: 0 auto;
+
+            img {
+                width: 100%;
+                height: 100%;
+            }
+        }
+
+        .toast {
+            width: 18em;
+            margin: 10px 0;
+        }
+
+        .form {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            .form-group {
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+                width: fit-content;
+
+                label {
+                    font-size: 20px;
+                    color: #3498db;
+                }
+
+                input {
+                    margin-top: 6px;
+                    min-width: 18em;
+                    height: 37px;
+                    padding: 0px 10px;
+                    font-size: 16px;
+                    font-family: "Open Sans", sans-serif;
+                    background-color: #f3f3f3;
+                    border: 0;
+                    border-radius: 4px;
+                    margin-bottom: 31px;
+                    transition: all 250ms ease-in-out;
+
+                    // &:hover {
+                    //     //background-color: #ffffff;
+                    //     //box-shadow: 0px 0px 14px 0.3px #0e81ce96;
+                    // }
+
+                    &:focus {
+                        outline: none;
+                        box-shadow: 0px 0px 12px 0.8px #3474dbb2;
+                    }
+                }
+            }
+        }
+    }
+
+    .footer {
+        margin: 1em;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        min-width: 18em;
+        color: #3498db;
+
+    }
+}
+
+//Login Main Container
+.login {
+    width: 27em;
+    height: 40em;
+    //min-height: 44em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5px;
+    position: relative;
+    z-index: 99;
+
+    .container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #fff;
+        box-shadow: 0px 0px 12px 2px rgba(15, 15, 15, 0.2);
+        border-radius: 4px;
+        position: relative;
+        z-index: 99;
+        width: 100%;
+        height: 100%;
+        z-index: 99;
+        padding: 17px 10px;
+        //transition: transform 200ms ease-in-out;
+    }
+
+    .right-side {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        height: 90%;
+        background-color: #3498db;
+        width: 100%;
+        position: absolute;
+        right: -34%;
+        border-radius: 6px;
+        z-index: 1;
+        transition: all 400ms ease-in-out;
+        cursor: pointer;
+        box-shadow: 0px 0px 12px 2px rgba(15, 15, 15, 0.281);
+
+        &.right {
+            right: -40%;
+            align-items: flex-end;
+
+            &:hover {
+                right: -45%;
+            }
+        }
+
+        &.left {
+            right: 40%;
+            align-items: flex-start;
+
+            &:hover {
+                right: 45%;
+            }
+        }
+
+        .text {
+            font-size: 21px;
+            font-weight: 500;
+            color: #fff;
+            margin-right: 3em;
+            margin-left: 3em;
+        }
+    }
+}
+
+//Button
+.btnN {
+    font-size: 21px;
+    padding: 5px 20px;
+    border: 0;
+    background-color: #3498db;
+    color: #fff;
+    border-radius: 3px;
+    transition: all 250ms ease-in-out;
+    cursor: pointer;
+
+    &:hover {
+        background-color: #2386c8;
+    }
+
+    &:focus {
+        outline: none;
+    }
+}
