@@ -6,6 +6,7 @@
 - MENR stack,
 - User authentication and authorization - login, sign up,
 - Login check middleware,
+- Add pensioners and their pension,
 - Password security and hashing,
 - Context,
 - Get, Post and Delete methods
